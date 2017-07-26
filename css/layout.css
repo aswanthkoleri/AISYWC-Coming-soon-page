@@ -394,7 +394,7 @@ ul#nav li.current a { color: #9C359B; }
 /* map */
 #map {
    display: block;
-	height: 486px;
+	height: 100%;
    width: 100%;
    background-color: #F6F4EF;
 }
