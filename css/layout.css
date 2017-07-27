@@ -197,9 +197,9 @@ ul#nav li.current a { color: #9C359B; }
 	margin: 18px auto 0;
 }
 #main #counter span {
-	font: 70px/1em 'merriweather-bold', serif;
+	font: 120px/1em 'merriweather-bold', serif;
 	display: block;
-	padding: 12px 0 30px;
+	padding: 12px 0 100px;
 	min-width: 25%;
 	float: left;	
 	text-shadow: 0px 1px 3px rgba(0, 0, 0, .5);	
