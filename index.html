@@ -230,23 +230,24 @@
         width: 100%;
        }
        </style>
-    <div id="map"></div>
-    <script>
-    function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkwvGk8waaTXkjw6WqR4ePu8-PVCJVv1k&callback=initMap">
-    </script>
+					<div id="map"></div>
+					<script>
+					function myMap() {
+					  var myCenter = new google.maps.LatLng(25.430416,81.770679);
+					  var mapCanvas = document.getElementById("map");
+					  var mapOptions = {center: myCenter, zoom: 16};
+					  var map = new google.maps.Map(mapCanvas, mapOptions);
+					  var marker = new google.maps.Marker({position:myCenter});
+					  marker.setMap(map);
+					    var infowindow = new google.maps.InfoWindow({
+					      content:"IIIT Rd, Near Boys Hostel, <br>Devghat,Jhalwa, <br>Allahabad, Uttar Pradesh 211015"
+					    });
+					  infowindow.open(map,marker);
+					}
+					</script>
+
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkwvGk8waaTXkjw6WqR4ePu8-PVCJVv1k&callback=myMap"></script>
+            	   
 
 	</section> <!-- end location section -->
 
